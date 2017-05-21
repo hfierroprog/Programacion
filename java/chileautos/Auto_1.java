@@ -1,14 +1,12 @@
-package pack;
+package packet;
 
-public class Auto {
+public class Auto_1 {
     private String vehiculo;
     private int precio;
     private int kilometraje;
     private String color_exterior;
     private String transmision;
     private int puertas;
-    private double litros;
-    private int cilindros;
     private String combustible;
     private String region;
     private String ciudad; 
@@ -17,15 +15,13 @@ public class Auto {
 
     
     
-    public Auto(String vehiculo,int precio,int kilometraje, String color_exterior, String transmision, int puertas, double litros, int cilindros, String combustible, String region, String ciudad, ){
+    public Auto_1(String vehiculo,int precio,int kilometraje, String color_exterior, String transmision, int puertas, String combustible, String region, String ciudad ){
         this.vehiculo = vehiculo;
         this.precio = precio;
         this.kilometraje = kilometraje;
         this.color_exterior = color_exterior;
         this.transmision = transmision;
         this.puertas = puertas;
-        this.litros = litros;
-        this.cilindros = cilindros;
         this.combustible = combustible;
         this.region = region;
         this.ciudad = ciudad;
@@ -58,21 +54,6 @@ public class Auto {
 
     public int getPuertas() {
         return puertas;
-    }
-
-
-    public int getPasajeros() {
-        return pasajeros;
-    }
-
-
-    public double getLitros() {
-        return litros;
-    }
-
-
-    public int getCilindros() {
-        return cilindros;
     }
 
 
@@ -114,7 +95,6 @@ public class Auto {
                 + "Precio:"+this.precio+"\nKilometraje:"+this.kilometraje+""
                 + "\nColor exterior:"+this.color_exterior+"\nTransmision:"+this.transmision+""
                 + "\nPuertas:"+this.puertas+""
-                + "\nLitros:"+this.litros+"\nCilindros:"+this.cilindros+""
                 + "\nCombustible:"+this.combustible+"\nRegion:"+this.region+""
                 + "\nCiudad:"+this.ciudad+"\nComparar:"+this.comparar+""
                 + "\nContactar:"+this.contactar;
